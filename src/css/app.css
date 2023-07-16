@@ -4,6 +4,10 @@ body {
   color: #CACACA;
   background-color: #08020d;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 h1,
@@ -58,19 +62,50 @@ h2 {
   grid-column-start: 9;
 }
 
+.btn {
+  padding: 20px 30px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #FFFFFF;
+  color: inherit;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+p {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+.mt-4 {
+  margin-top: 40px;
+}
+
+.mr-5 {
+  margin-right: 50px;
+}
+
 header {
   padding: 25px 0;
   text-transform: uppercase;
   font-size: 11px;
   position: fixed;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 header .content {
   max-width: 1200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .logo {
@@ -135,6 +170,11 @@ header .content {
 
 .hero {
   padding: 200px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero .hero-content {
   display: flex;
@@ -209,6 +249,90 @@ header .content {
   .hero-content span {
     padding: 0 20px;
     text-align: center;
+  }
+}
+.page-pricing {
+  padding-top: 100px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.page-pricing h2 {
+  font-size: 2rem;
+}
+
+.page-pricing .cards {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards .pricing-item {
+  padding: 0px 1.5rem;
+  border-radius: 1rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  margin-bottom: 50px;
+}
+
+.pricing-item h3 {
+  padding-bottom: 200px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.pricing-item .btn {
+  padding: 20px 0;
+}
+
+.pricing-item .pricing-value {
+  font-size: 64px;
+  line-height: 64px;
+  display: flex;
+  padding-right: 16px;
+}
+
+.pricing-item .currency {
+  font-size: 32px;
+  line-height: 48px;
+  padding-left: 16px;
+}
+
+.pricing-item .pricing-footer {
+  padding: 64px 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.bg-1 {
+  background-image: url("/src/images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-2 {
+  background-image: url("/src/images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-3 {
+  background-image: url("/src/images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+  .cards .pricing-item {
+    width: 100%;
+    margin: 0 20px 50px 20px;
   }
 }
 

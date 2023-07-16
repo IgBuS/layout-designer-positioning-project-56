@@ -6,13 +6,16 @@ header {
     font-size: 11px;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
 
     .content {
         max-width: 1200px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 }
 

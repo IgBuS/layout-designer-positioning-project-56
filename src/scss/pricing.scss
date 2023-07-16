@@ -1,0 +1,86 @@
+@import './variables.scss';
+
+.page-pricing {
+    padding-top: 100px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.page-pricing h2 {
+    font-size: 2rem;;
+}
+
+.page-pricing .cards {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards .pricing-item {
+    padding: 0px 1.5rem;
+    border-radius: 1rem;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    margin-bottom: 50px;
+}
+
+.pricing-item h3 {
+    padding-bottom: 200px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.pricing-item .btn {
+    padding: 20px 0;
+}
+
+.pricing-item .pricing-value {
+    font-size: 64px;
+    line-height: 64px;
+    display: flex;
+    padding-right: 16px;
+}
+
+.pricing-item .currency {
+    font-size: 32px;
+    line-height: 48px;
+    padding-left: 16px;
+}
+
+.pricing-item .pricing-footer {
+    padding: 64px 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.bg-1 {
+    background-image: url('/src/images/subscribe_1.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-2 {
+    background-image: url('/src/images/subscribe_2.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-3 {
+    background-image: url('/src/images/subscribe_3.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 414px) {
+    .cards .pricing-item {
+        width: 100%;
+        margin: 0 20px 50px 20px;
+    }
+}
