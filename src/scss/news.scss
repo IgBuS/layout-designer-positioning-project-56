@@ -1,0 +1,61 @@
+@import './variables.scss';
+
+.page-news {
+    flex-direction: column;
+    max-width: 1200px;
+    padding-top: 100px;
+}
+
+.page-news h2 {
+    font-size: 38px;
+    line-height: 57px;
+}
+
+.news-item {
+    padding-bottom: 65px;
+    gap: 50px;
+}
+
+.news-item > img{
+    width: 100%;
+}
+
+.news-item .news-body {
+    flex-direction: column;
+    align-items: normal;
+    justify-content: space-between;
+}
+
+.news-item .btn {
+    padding: 16px 30px;
+    width: max-content;
+}
+
+.news-item span {
+    padding-right: 16px;
+}
+
+.news-item .avatar {
+    padding-right: 16px;
+}
+
+.news-item h3 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: normal;
+    padding-bottom: 30px;
+}
+
+.news-item .news-author {
+    align-items: center;
+    justify-content: left;
+    padding: 24px 0;
+}
+
+@media screen and (max-width: 414px) {
+    .news-item {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

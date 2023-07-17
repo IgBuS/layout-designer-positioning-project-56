@@ -71,6 +71,7 @@ h2 {
   text-transform: uppercase;
   width: 100%;
   text-align: center;
+  display: block;
 }
 
 .upper {
@@ -82,12 +83,33 @@ p {
   margin-inline: 0;
 }
 
+h3 {
+  margin-block: 0;
+  margin-inline: 0;
+}
+
 .mt-4 {
   margin-top: 40px;
 }
 
 .mr-5 {
   margin-right: 50px;
+}
+
+.ml-5 {
+  margin-left: 50px;
+}
+
+.orange {
+  color: #F89202;
+}
+
+.centre {
+  text-align: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 header {
@@ -268,7 +290,7 @@ header .content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .cards .pricing-item {
@@ -333,6 +355,65 @@ header .content {
   .cards .pricing-item {
     width: 100%;
     margin: 0 20px 50px 20px;
+  }
+}
+.page-news {
+  flex-direction: column;
+  max-width: 1200px;
+  padding-top: 100px;
+}
+
+.page-news h2 {
+  font-size: 38px;
+  line-height: 57px;
+}
+
+.news-item {
+  padding-bottom: 65px;
+  gap: 50px;
+}
+
+.news-item > img {
+  width: 100%;
+}
+
+.news-item .news-body {
+  flex-direction: column;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+.news-item .btn {
+  padding: 16px 30px;
+  width: max-content;
+}
+
+.news-item span {
+  padding-right: 16px;
+}
+
+.news-item .avatar {
+  padding-right: 16px;
+}
+
+.news-item h3 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.news-item .news-author {
+  align-items: center;
+  justify-content: left;
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 414px) {
+  .news-item {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

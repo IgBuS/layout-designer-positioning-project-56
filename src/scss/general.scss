@@ -72,6 +72,7 @@ h2 {
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    display: block;
 }
 
 .upper {
@@ -83,10 +84,31 @@ p {
     margin-inline: 0;
 }
 
+h3 {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
 .mt-4 {
     margin-top: 40px;
 }
 
 .mr-5 {
     margin-right: 50px;
+}
+
+.ml-5 {
+    margin-left: 50px;
+}
+
+.orange {
+    color: $orange;
+}
+
+.centre {
+    text-align: center;
+}
+
+.reverse {
+    flex-direction: row-reverse
 }
