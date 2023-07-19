@@ -20,7 +20,16 @@ h2 {
 .flex {
   display: flex;
   justify-content: space-evenly;
+}
+
+.flex-centre {
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+.column {
+  flex-direction: column;
 }
 
 .wrap {
@@ -72,6 +81,7 @@ h2 {
   width: 100%;
   text-align: center;
   display: block;
+  text-decoration: none;
 }
 
 .upper {
@@ -306,8 +316,10 @@ header .content {
 
 .pricing-item h3 {
   padding-bottom: 200px;
+  padding-top: 24px;
   font-size: 24px;
   line-height: 36px;
+  font-weight: normal;
 }
 
 .pricing-item .btn {
@@ -380,7 +392,7 @@ header .content {
 .news-item .news-body {
   flex-direction: column;
   align-items: normal;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .news-item .btn {
@@ -414,6 +426,41 @@ header .content {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+.page-app {
+  max-width: 1200px;
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.page-app .content {
+  gap: 144px;
+}
+
+.page-app .content p {
+  padding-bottom: 16px;
+}
+
+.page-app h2 {
+  padding-bottom: 64px;
+}
+
+.page-app .btn {
+  background-color: #95390C;
+  border-radius: 32px;
+  padding: 16px 40px;
+  font-size: 12.8px;
+  width: max-content;
+  border: none;
+}
+
+@media screen and (max-width: 414px) {
+  .page-app .content {
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 16px;
   }
 }
 

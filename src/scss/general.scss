@@ -21,7 +21,16 @@ h2 {
 .flex {
     display: flex;
     justify-content: space-evenly;
+}
+
+.flex-centre {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.column {
+flex-direction: column;
 }
 
 .wrap {
@@ -73,6 +82,7 @@ h2 {
     width: 100%;
     text-align: center;
     display: block;
+    text-decoration: none;
 }
 
 .upper {
