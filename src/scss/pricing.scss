@@ -83,6 +83,10 @@
 @media screen and (max-width: 414px) {
     .cards .pricing-item {
         width: 100%;
-        margin: 0 20px 50px 20px;
+    }
+
+    .cards {
+        padding: 0 20px;
+        gap: 50px;
     }
 }

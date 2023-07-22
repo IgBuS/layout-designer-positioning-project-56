@@ -1,0 +1,85 @@
+@import './variables.scss';
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: max-content;
+    max-width: 1200px;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    column-gap: 40px;
+}
+
+.footer .section {
+    grid-column: span 1;
+    text-align: left;
+}
+
+.footer .section-2{
+    display: flex;
+    justify-content: left;
+    grid-column: span 4;
+    text-align: left;
+}
+.footer .section-2 a,
+.footer .section a {
+    display: block;
+    text-decoration: none;
+    color: $gray;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.footer .section-2 a {
+    padding-right: 16px;
+}
+
+.footer .section h2 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.footer .icon {
+    padding-right: 24px;
+}
+
+.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+hr {
+    width: 100%;
+    grid-column: span 4;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 414px) {
+    .footer {
+        align-items: normal;
+    }
+
+    .footer .content {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 16px;
+        width: max-content;
+    }
+
+    .footer .content .section-2 {
+        flex-direction: column;
+    }
+}
