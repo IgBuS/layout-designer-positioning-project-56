@@ -89,6 +89,10 @@ flex-direction: column;
     text-transform: uppercase;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 p {
     margin-block: 0;
     margin-inline: 0;
