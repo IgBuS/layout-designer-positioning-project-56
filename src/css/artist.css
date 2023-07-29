@@ -72,5 +72,68 @@
     width: auto !important;
   }
 }
+.page-popular-track {
+  padding-top: 100px;
+  flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.popular-track .track-info h3 {
+  font-size: 12.8px;
+  line-height: 19.2px;
+  font-weight: bold;
+}
+
+.popular-track {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.popular-track img {
+  width: 55px;
+  height: 55px;
+}
+
+.popular-track .track-info {
+  padding-left: 15px;
+}
+
+.popular-track .time {
+  margin-left: auto;
+}
+
+.tracks-content {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 25px;
+  column-gap: 50px;
+}
+
+@media screen and (max-width: 414px) {
+  .tracks-content {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+  }
+  .page-popular-track h2 {
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: 700;
+  text-align: left;
+  align-self: flex-start;
+}
 
 /*# sourceMappingURL=artist.css.map */

@@ -1,2 +1,11 @@
 @import
-'./artist/hero.scss';
+'./artist/hero.scss',
+'./artist/popular-track.scss';
+
+h2 {
+    font-size: 38px;
+    line-height: 57px;
+    font-weight: 700;
+    text-align: left;
+    align-self: flex-start;
+}
