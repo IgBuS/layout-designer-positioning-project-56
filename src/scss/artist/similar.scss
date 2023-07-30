@@ -1,31 +1,36 @@
 @import '../variables.scss';
 @import './common.scss';
 
-.page-discography {
-    padding-top: 100px;
+.page-similar {
+    padding: 100px 0;
     flex-direction: column;
     max-width: 1200px;
     width: 100%;
 }
 
-.discography-item .discography-info h4 {
+.similar-item .similar-info h4 {
     @include h4;
 }
 
-.discography-item {
+.similar-item {
     display: flex;
     flex-direction: row;
     width: 100%;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.discography-item img {
+.similar-item img {
     width: 250px;
     height: 250px;
 }
 
-.page-discography .content {
+.similar-item .similar-info {
+    text-align: center;
+}
+
+.page-similar .content {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(4, 1fr);
@@ -34,7 +39,7 @@
 }
 
 @media screen and (max-width: 414px) {
-    .page-discography .content {
+    .page-similar .content {
         padding: 0 20px;
         display: flex;
         flex-direction: row;
@@ -43,17 +48,17 @@
         width: auto;
     }
 
-    .page-discography h2 {
+    .page-similar h2 {
         @include h2-small;
     }
 
-    .discography-item {
+    .similar-item {
         flex-direction: column;
         width: min-content;
         align-items: start;
     }
 
-    .discography-item img {
+    .similar-item img {
         width: 137px;
         height: 137px;
     }
